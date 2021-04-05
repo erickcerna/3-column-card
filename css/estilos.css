@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+html {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+:root {
+  --Brightorange: hsl(31, 77%, 52%);
+  --Darkcyan: hsl(184, 100%, 22%);
+  --Verydarkcyan: hsl(179, 100%, 13%);
+  --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+  --Verylightgray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--Verylightgray);
+  padding: 100px 30px;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card {
+  padding: 30px;
+  color: var(--Transparentwhite);
+}
+
+.card h2 {
+  text-transform: uppercase;
+  padding: 20px 0;
+  color: var(--Verylightgray);
+}
+
+.card p {
+  line-height: 30px;
+}
+
+.card button {
+  padding: 14px 50px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 20px;
+  background-color: var(--Verylightgray);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+.card1 {
+  background-color: var(--Brightorange);
+}
+
+.card1 button {
+  color: var(--Brightorange);
+}
+
+.card2 {
+  background-color: var(--Darkcyan);
+}
+
+.card2 button {
+  color: var(--Darkcyan);
+}
+
+.card3 {
+  background-color: var(--Verydarkcyan);
+}
+
+.card3 button {
+  color: var(--Verydarkcyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    max-width: 800px;
+  }
+  .card button {
+    margin-top: 60px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

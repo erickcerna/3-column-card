@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+// font-family: 'Big Shoulders Display', cursive; Weights: 700
+
+html {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+:root {
+  --Brightorange: hsl(31, 77%, 52%);
+  --Darkcyan: hsl(184, 100%, 22%);
+  --Verydarkcyan: hsl(179, 100%, 13%);
+
+  // (paragraphs)
+  --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+
+  // (background, headings, buttons)
+  --Verylightgray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Verylightgray);
+  padding: 100px 30px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  max-width: 550px;
+  //max-width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card {
+  padding: 30px;
+  color: var(--Transparentwhite);
+
+  h2 {
+    text-transform: uppercase;
+    padding: 20px 0;
+    color: var(--Verylightgray);
+  }
+
+  p {
+    line-height: 30px;
+  }
+
+  button {
+    padding: 14px 50px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+    background-color: var(--Verylightgray);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+  }
+}
+
+.card1 {
+  background-color: var(--Brightorange);
+
+  button {
+    color: var(--Brightorange);
+  }
+}
+
+.card2 {
+  background-color: var(--Darkcyan);
+
+  button {
+    color: var(--Darkcyan);
+  }
+}
+
+.card3 {
+  background-color: var(--Verydarkcyan);
+
+  button {
+    color: var(--Verydarkcyan);
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 800px;
+  }
+
+  .card {
+    button {
+      margin-top: 60px;
+    }
+  }
+}
